@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  // ScrollTrigger.defaults({
+  //   markers:true
+  // })
+
   let timeline = new TimelineMax({
     scrollTrigger: {
       trigger: '.first-section',
       start: 'center center',
-      endTrigger:".image-wrapper" ,
-      end:"bottom top",
-      // markers: true,
       scrub: 1,
       duration: 2,
+      // endTrigger:".image-wrapper" ,
+      // end:"bottom top",
       // delay: 2,
       // pin: true
       }
@@ -17,15 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let timeline2 = new TimelineMax({
     scrollTrigger: {
+      id:'4 pictures',
       trigger: '.image-wrapper',
-      start: 'top top',
-      // markers: true,
-      endTrigger:"html",
-      end:"bottom top",
+      start: '10% top',
       scrub: 1,
       duration: 2,
+      // endTrigger:"html",
+      // end:"bottom top",
       // delay: 2,
-      // pin: true
+      // pin: true,
+      // pinSpacing: false
+
       }
   });
 
