@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,2FAAI;AAKZ,OAAO,CAAC,uEAAI;ADHZ,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;EAChB,WAAW,ECNH,SAAS;EDOjB,KAAK,EAAE,IAAI;CAIZ;;AAXD,AAQE,CARD,CAQC,CAAC,CAAA;EACC,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "reset.scss",
+        "fonts.scss"
+    ],
+    "names": [],
+    "file": "reset.css"
+}

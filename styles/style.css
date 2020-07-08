@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins";
+  color: #fff;
+}
+
+* i {
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+section .nav-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  padding: 20px 0;
+}
+
+section .nav-wrapper h4 {
+  font-family: "Montserrat";
+  margin-left: 30px;
+}
+
+section .nav-wrapper i {
+  margin-right: 5px;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+section .nav-wrapper .button {
+  padding: 10px 20px;
+  background: #030000;
+  margin-right: 30px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+section .nav-wrapper .button:hover {
+  background: #eaeaea;
+  color: #030000;
+}
+
+section .nav-wrapper .button:hover i {
+  color: #030000;
+}
+
+section .container {
+  height: 100vh;
+  width: 100%;
+}
+
+section .container .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-size: 100px;
+}
+
+@media (max-width: 1080px) {
+  section .container .title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 865px) {
+  section .container .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 546px) {
+  section .container .title {
+    font-size: 40px;
+  }
+}
+
+section .container .images {
+  position: relative;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+  top: -10px;
+}
+
+section .container .images .image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+}
+
+section .container .images .image-wrapper .parallax-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .container .images:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#111), to(transparent));
+  background: linear-gradient(to top, #111, transparent);
+}
+
+section .container .blur {
+  width: 120%;
+  margin-left: -10%;
+  height: 250px;
+  background: #030000;
+  position: absolute;
+  bottom: -180px;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  z-index: 6;
+}
+
+section .container footer .footer-wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+
+section .container footer .footer-wrapper ul {
+  margin-bottom: 50px;
+  margin-right: 40px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+section .container footer .footer-wrapper ul li {
+  display: inline;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+section .container footer .footer-wrapper ul li i {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+section .container .content {
+  height: 100%;
+  width: 100%;
+  background-color: #030000;
+  z-index: 0;
+  top: 100%;
+  margin-top: 3em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container .content .content-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container .content .content-wrapper .content-images {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  pointer-events: none;
+}
+
+section .container .content .content-wrapper .content-images .content-image-wrapper {
+  height: 280px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+section .container .content .content-wrapper .content-images .content-image-wrapper img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .container .content .content-wrapper .content-images .content-image-wrapper h4 {
+  font-size: 1.8em;
+  position: relative;
+  top: -30px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+section .container .content .content-wrapper .content-images .one {
+  top: -10px;
+}
+
+section .container .content .content-wrapper .content-images .two {
+  top: -50px;
+}
+
+section .container .content .content-wrapper .content-images .three {
+  top: 20px;
+}
+
+section .container .content .content-wrapper .content-images .four {
+  top: -20px;
+}
+
+section .container .content .content-wrapper .text {
+  padding-top: 100px;
+  width: 60%;
+  font-size: 0.8em;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
